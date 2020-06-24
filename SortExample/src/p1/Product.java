@@ -40,9 +40,9 @@ public class Product {
 		obj_List.add(p3);
 		obj_List.add(p4);
 		
-		Stream<Product> obj = obj_List.stream();
+		Stream<Product> obj_Stream = obj_List.stream();
 		
-		List<Product> result = obj.sorted((prod1,prod2)-> prod1.productName.compareTo(prod2.productName))
+		List<Product> result = obj_Stream.sorted((prod1,prod2)-> prod1.productName.compareTo(prod2.productName))
 				.collect(Collectors.toList());
 		
 		System.out.println(result);
