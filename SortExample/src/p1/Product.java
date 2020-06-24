@@ -62,9 +62,6 @@ public class Product {
 				  // return 1;
 			    //else
 				  // return -1;
-				String prod1 = p1.productName;
-				String prod2 = p2.productName;
-				return prod1.compareTo(prod2);
 			}
 		};
 
